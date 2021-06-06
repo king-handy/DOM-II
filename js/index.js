@@ -12,11 +12,17 @@
 //   * `drag / drop`
 
 const mouseOver = document.getElementsByClassName('nav-link')
-mouseOver.addEventListener('mouseover', event => {
+mouseOver.addEventListener('mouseover', (event) => {
     alert(`Mouse over link!`)
 })
 
-window.addEventListener('load', event => {
-    console.log(`Page loaded.`)
+window.addEventListener('load', (event) => {
+    alert(`Page loaded.`)
 })
+
+window.addEventListener('keydown', (event) => {
+    alert(`You pressed the ` + event.key + ` key`)
+})
+
+window.addEventListener('wheel', )
 
