@@ -1,5 +1,4 @@
 // Your code goes here
-// * [ ] Using your [index.js file](js/index.js), create [event listeners](https://developer.mozilla.org/en-US/docs/Web/Events) of at least 10 _different_ types. You must Use your creativity to make the Fun Bus site more interactive. For example you could change colors, animate objects, remove objects, etc. Here are some event types you could try to use:
 //   * `mouseover`
 //   * `keydown`
 //   * `wheel`
@@ -24,5 +23,22 @@ window.addEventListener('keydown', (event) => {
     alert(`You pressed the ` + event.key + ` key`)
 })
 
-window.addEventListener('wheel', )
+window.addEventListener('wheel', (event) => {
+    console.log(`Scrolling!`)
+})
+
+const textContent = document.getElementsByClassName('text-content')
+textContent.addEventListener('hover', (event) => {
+    textContent.style.color = 'green'
+})
+
+const destination = document.querySelectorAll('.destination')
+destination.addEventListener('doubleclick', (event) => {
+    destination.style.backgroundColor = 'orange'
+})
+
+const image = document.querySelectorAll('img')
+image.addEventListener('mouseenter', (event) => {
+    image.style.width = '75%'
+})
 
