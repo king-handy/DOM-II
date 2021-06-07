@@ -42,3 +42,13 @@ image.addEventListener('mouseenter', (event) => {
     image.style.width = '75%'
 })
 
+const text = document.getElementsByClassName('content-pick')
+text.addEventListener('hover', (event) => {
+    innerText.style.color = 'blue'
+})
+
+cont divs = document.querySelectorAll('a')
+divs.addEventListener('click', () => {
+    divs.style.borderColor = 'black'
+})
+
